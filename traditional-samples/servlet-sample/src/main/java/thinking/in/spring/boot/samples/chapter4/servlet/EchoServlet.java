@@ -27,6 +27,7 @@ public class EchoServlet extends HttpServlet {
             throws IOException, ServletException {
         // 获取请求参数 "message" 内容
         String message = request.getParameter("message");
+        System.out.println("service");
         PrintWriter writer = response.getWriter();
         // 输出 "message" 参数内容
         writer.println(message);
